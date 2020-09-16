@@ -9,4 +9,6 @@ conda install -y ipykernel
 conda install -y -c fastai -c pytorch fastai
 conda install -y -c fastai fastbook
 conda install -y -c fastai nbdev
+pip install 'sentencepiece<0.1.90'
+pip install azure-cognitiveservices-search-imagesearch
 python -m ipykernel install --user --name fastaienv --display-name "Python (fastaienv)"
