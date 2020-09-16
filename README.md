@@ -59,6 +59,8 @@ conda install -y ipykernel
 conda install -y -c fastai -c pytorch fastai
 conda install -y -c fastai fastbook
 conda install -y -c fastai nbdev
+pip install 'sentencepiece<0.1.90'
+pip install azure-cognitiveservices-search-imagesearch
 ```
 If you don't already have fastai, then you have to wait for the libraries and dependencies to install. Wait up to 10 mins for this to complete and continue to the next step.
 
@@ -67,9 +69,10 @@ If you don't already have fastai, then you have to wait for the libraries and de
 python -m ipykernel install --user --name fastaienv --display-name "Python (fastaienv)"
 ```
 
-4) Clone the [Fast AI Repo](https://github.com/fastai/fastai) with below snippet:
+4) Clone the [Fast AI Repo](https://github.com/fastai/fastai) and [Fastbook Repo](https://github.com/fastai/fastbook) with below snippet:
 ```shell
 git clone https://github.com/fastai/fastai.git
+git clone https://github.com/fastai/fastbook.git
 ```
 
 All of the notebook samples should now be cloned into the fastai folder and ready to run!
